@@ -1,0 +1,41 @@
+.lead-form-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex: 1 0 100%;
+    }
+}
+
+.lead-form {
+    .two-columns-wrapper {
+        gap: 48px;
+
+        @media screen and (min-width:$desktop) {
+            gap: 104px;
+        }
+
+    }
+    .img-wrapper {
+        display: none;
+        @media screen and (min-width:$desktop) {
+            display: flex;
+        }
+    }
+
+    .content-wrapper {
+        .text-section {
+            align-items: start;
+            h1 {
+                text-align: left;
+                font-size: 48px;
+                line-height: 60px;
+            }
+            .text {
+                text-align: left;
+                min-width: 100%;
+            }
+        } 
+    }
+}

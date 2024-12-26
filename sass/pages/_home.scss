@@ -1,0 +1,29 @@
+.hero {
+    height: 100%;
+    display: block;
+    background: url('../images/home/hero.png') no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    .hero-img-wrapper {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+        @media screen and (min-width: $tablet) {
+            justify-content: end;
+            max-width: 50%;
+            margin-left: auto;
+        }
+    }
+
+    img {
+        max-height: 550px;
+
+        @media screen and (min-width: $desktop) {
+            max-height: 860px;
+        }
+    }
+}
+
+

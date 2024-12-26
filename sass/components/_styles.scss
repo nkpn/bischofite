@@ -1,0 +1,462 @@
+// text elements styles
+h1,
+.title-xl {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;;
+    font-weight: 600;
+    color: $text;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 60px;
+        line-height: 72px;
+    }
+}
+
+.title-lg,
+.lead-form-title {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;;
+    font-weight: 600;
+    color: $text;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+h2,
+.title-md,
+.carousel-title {
+    font-family: $font;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+    color: $text;
+    letter-spacing: -0.02em;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+.display-xl {
+    font-family: $font;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    color: $blue;
+    letter-spacing: -0.02em;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 60px;
+        line-height: 72px;
+    }
+}
+
+.display-md {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    color: $text;
+    letter-spacing: -0.02em;
+}
+
+.text {
+    font-family: $font;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $text;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.text-lg {
+    font-family: $font;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: $text;
+}
+
+.text-md {
+    font-family: $font;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $text;
+}
+
+.text-sm {
+    font-family: $font;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $blue;
+}
+
+.quote-text {
+    font-family: $font;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    font-style: italic;
+    color: $text;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+// font styles
+
+.italic {
+    font-style: italic;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+
+.logo a {
+    font-family: $font;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.navigation-link {
+    font-family: $font;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $text;
+    text-transform: uppercase;
+
+    &:hover {
+       opacity: 0.8;
+    }
+}
+
+.footer-navigation-link {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $font;
+    color: $text;
+    font-weight: 600;
+}
+
+
+// CTA Button
+.button-cta {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    background-color: $blue;
+    color: $white;
+    text-align: center;
+    text-wrap: nowrap;
+
+    &:hover, &:focus {
+        background-color: $blueHover;
+    }
+
+    &:active {
+        background-color: $blueActive;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: auto;
+        padding: 16px 28px;
+        font-size: 18px;
+        line-height: 28px;
+     }
+
+    
+   
+    img {
+        pointer-events: none;
+        margin-left: 8px;
+        width: 11.6px;
+        height: 11.6px;
+        @media screen and (min-width: $tablet) {
+            margin-left: 12px;
+            width: 14px;
+            height: 14px;
+         }
+    }
+
+    // for home page footer form
+    &.white {
+        background-color: $white;
+        color: $blue;
+        border: none;
+
+        &:hover, &:focus {
+            background-color:  $blueLight;
+        }
+    
+        &:active {
+            background-color: $grayBorder;
+            color: $blueGray;
+        }
+    }
+
+    // Small version (f.e. in header)
+    &.small {
+        @media screen and (min-width: $tablet) {
+            width: auto;
+            padding: 12px 20px;
+            font-size: 16px;
+            line-height: 24px;
+         }
+
+         img {
+            @media screen and (min-width: $tablet) {
+                width: 11.6px;
+                height: 11.6px;
+             }
+        }
+    }
+}
+// Scroll To Top button
+.scroll-top-btn {
+    padding: 17px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    display: block;
+    position: fixed;
+    background-color: $white;
+    bottom: 24px;
+    right: 16px;
+    cursor: pointer;
+    z-index: 50;
+
+    &:hover {
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 21px;
+        right: 40px;
+        bottom: 48px;
+    }
+
+    img {
+        width: 14px; 
+        height: 14px;
+    }
+}
+
+input {
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+// General flex wrapper
+.two-columns-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @media screen and (min-width: $desktop) { 
+        flex-direction: row;
+
+        & > div {
+            flex-basis: 50%;
+        }
+    }
+}
+
+.three-columns {
+    display: grid;
+    gap: 64px;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: $desktop) { 
+        grid-template-columns: repeat(3, 1fr);
+        gap: unset;
+        row-gap: 32px;
+        column-gap: 64px;
+    }
+}
+
+video {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: $desktop) { 
+        border-radius: 44px;
+        border: 2px solid #000;
+    }
+}
+
+
+.four-columns {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: $tablet) { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: $desktop) { 
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// Reusable section
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+
+    .badge {
+        margin-bottom: 16px;
+    }
+
+    h1, h2, h3, h4 {
+        margin-bottom: 16px;
+        text-align: center;
+        @media screen and (min-width: $desktop) {
+           margin-bottom: 24px;
+        }
+    }
+
+    .text {
+       
+        text-align: center;
+        color: $text;
+        @media screen and (min-width: $desktop) {
+            max-width: 60%;
+        }
+
+        & + .button-cta {
+            margin-top: 32px;
+
+            @media screen and (min-width: $desktop) {
+                margin-top: 48px;
+            }
+        }
+    }  
+}
+
+// Default sections paddings 
+.section {
+    .container {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        @media screen and (min-width: $desktop) {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+    }
+}
+
+
+.icon-wrapper {
+    background-color: $blueLight;
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: calc(100% + 10px);
+        width: calc(100% + 10px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid $blueLight;
+        border-radius: 50%;
+    }
+}
+
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 16px;
+    background-color: $blueLight;
+    color: $blue;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+
+// CTA Form
+.cta-form {
+    label {
+        display: inline-block;
+        margin-bottom: 6px; 
+    }
+
+    button.button-cta {
+        width: 100%;
+        margin-top: 32px;
+        border: none;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"] {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    background-color: $white;
+    border: 1px solid $gray;
+    border-radius: 8px;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $text;
+}
+
+// iti = input with country flags
+.iti {
+    width: 100%;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
