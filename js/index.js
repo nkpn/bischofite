@@ -82,4 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
           mobileMenu.style.display = "none";
         }, 300);
     });
+  });
 });
+

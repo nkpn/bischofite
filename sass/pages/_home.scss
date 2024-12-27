@@ -1,9 +1,26 @@
+.home-page {
+    h2 {
+        @include heading-green;
+    }
+}
+
 .hero {
     height: 100%;
     display: block;
     background: url('../images/home/hero.png') no-repeat;
     background-size:cover;
     background-position: center;
+
+    .container {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        @media screen and (min-width: $desktop) {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+    }
+
 
     .hero-img-wrapper {
        display: flex;
@@ -27,3 +44,99 @@
 }
 
 
+
+.section {
+    .two-columns-wrapper {
+        margin-top: 32px;
+
+        @media screen and (min-width: $desktop) {
+            margin-top: 64px;
+            gap: 20px;
+        }
+    }
+}
+
+.facts {
+    .img-wrapper {
+        @media screen and (min-width: $desktop) {
+            flex-basis: 60%;
+            width: 60%;
+        }
+       
+    }
+}
+
+.products {
+    .product-btn {
+        margin-bottom:36px;
+
+        @media screen and (min-width: $desktop) {
+           margin-bottom: 72px;
+        }
+    }
+    .heading {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 18px;
+
+        @media screen and (min-width: $desktop) { 
+            flex-direction: row;
+            align-items: center;
+            gap: 36px;
+        }
+
+        &:after {
+            left: 65%;
+
+            @media screen and (min-width: $tablet) { 
+                left: 300px;
+            }
+
+            @media screen and (min-width: $desktop) { 
+                left: 640px;
+            }
+
+        }
+    }
+
+    .button:not(.product-btn) {
+        margin-top: 36px;
+    }
+}
+
+.certifications {
+    .heading:after {
+        left: 250px;
+
+        @media screen and (min-width: $tablet) {
+            left: 350px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            left: 380px;
+        }
+    }
+    .img-wrapper {
+        margin-top: 36px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: row;
+        gap: 10%;
+
+        @media screen and (min-width: $tablet) {
+            margin-left: 100px;
+        }
+
+        &> div {
+            flex-basis: 50%;
+            max-width: 275px;
+
+            p {
+                margin-top: 12px;
+            }
+        }
+    }
+}

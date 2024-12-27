@@ -17,34 +17,8 @@
     font-weight: 800;
     font-size: 26px;
     line-height: 37px;
-    color: $green;
-    text-transform: uppercase;
-
-    @media screen and (min-width:$tablet) {
-        font-size: 36px;
-        line-height: 44px;
-    }
-}
-
-@mixin heading-green {
-    font-family: $font;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 37px;
-    color: $green;
-
-    @media screen and (min-width:$tablet) {
-        font-size: 36px;
-        line-height: 44px;
-    }
-}
-
-@mixin heading-green {
-    font-family: $font;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 37px;
     color: $blue;
+    text-transform: uppercase;
 
     @media screen and (min-width:$tablet) {
         font-size: 36px;
@@ -76,4 +50,35 @@
         font-size: 24px;
         line-height: 28px;
     }
+}
+
+.heading {
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 200vw;
+        height: 2px;
+        top: 50%;
+        left: 150px;
+        transform: translateY(-50%);
+        z-index: 1;
+        background-color: $green;
+
+        @media screen and (min-width: $desktop) {
+            left: 200px;
+        }
+    }
+}
+
+.subheading {
+    @include subheading();
+    margin-bottom: 18px;
+}
+
+.bold {
+    font-weight: 700 !important;
 }

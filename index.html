@@ -59,25 +59,107 @@
   </header>
     <!-- END OF HEADER -->
 
-  <main>
+  <main class="home-page">
     <!-- HERO Section -->
     <seciton class="section hero">
       <div class="container">
           <div class="hero-img-wrapper">
             <img src="./images/home/canistra-1.png" alt="Криголам">
+            <h1 class="hidden">Bischotech </h1>
           </div>
       </div>
     </seciton>
     <!-- End of HERO Section -->
 
     <!-- About US Section -->
-     <section>
+     <section class="section about-us">
       <div class="container">
-        <div class="two-columns">
+        <h2 class="heading">Про нас</h2>
+        <div class="two-columns-wrapper">
+          <div>
+            <p class="body">Bischotech спеціалізується на виробництві продукції на основі природного мінералу бішофіту, хімічною основою якого є магній хлорид гексагідрат (MgCl2 • 6H2O). </p>
+            <br>
+            <br>
+            <p class="body">Bischotech є природним джерелом магнію, який має широке застосування в різних галузях, зокрема в промисловій сфері.</p>
+          </div>
+          <div class="img-wrapper">
+            <img src="./images/home/salt.png" alt="Бішофіт ">
+          </div>
           
         </div>
       </div>
      </section>
+
+     <!-- Facts section -->
+     <section class="section facts">
+      <div class="container">
+        <h2 class="heading">Факти</h2>
+        <div class="two-columns-wrapper">
+          <div>
+           <ul class="list">
+            <li class="body">Свердловина <strong>2300</strong> метрів.</li>
+            <li class="body">Видобуток рапи -<strong>100</strong> тис тон на рік.</li>
+            <li class="body">Власна переробка видобутку в <strong>20</strong> тис тон.</li>
+            <li class="body">Потужності для виготовлення оксиду магнію – <strong>2000</strong> тон на рік.</li>
+            <li class="body">Зміст бішофіту <strong>43-94%</strong> (висока чистота).</li>
+           </ul>
+          </div>
+          <div class="img-wrapper">
+            <img src="./images/home/how-it-works.png" alt="Методи добування бішофіту">
+          </div>
+          
+        </div>
+      </div>
+     </section>
+
+      <!-- products section -->
+      <section class="section products">
+        <div class="container">
+          <h2 class="heading">Асортимент <p class="body">КАНІСТРИ 5/10 літрів</p></h2>
+
+          <div class="two-columns-wrapper">
+            <div>
+              <a href="krigolam.html" class="button product-btn">Криголам 
+                <img src="./icons/arrow-dropdown.svg" alt="детальніше про криголам">
+              </a>
+              <h3 class="subheading">Протиожеледний реагент</h3>
+              <p class="body">Криголам – це універсальний засіб на основі природного мінералу бішофіту. Він ефективно вирішує проблему льоду та ожеледиці.
+              </p>
+              <p class="body">Як це працює: криголам, потрапляючи на лід, розплавляє його завдяки хімічній реакції. Він діє швидше за звичайну сіль і ефективний навіть при дуже низьких температурах.
+              </p>
+              <a href="krigolam.html" class="button">Детальніше</a>
+            </div>
+           
+            <div class="img-wrapper">
+              <img src="./images/home/canistra-2.png" alt="Методи добування бішофіту">
+            </div>
+            
+          </div>
+        </div>
+       </section>
+
+       <!-- About US Section -->
+     <section class="section certifications">
+      <div class="container">
+        <h2 class="heading">Сертифікати</h2>
+
+          <div class="img-wrapper">
+              <div>
+                <img src="./images/home/certificate1.png" alt="Сертифікат якості">
+                <p class="body">Сертифікат якості</p>
+              </div>
+              <div>
+                <img src="./images/home/certificate2.png" alt="Сертифікат відповідності">
+                <p class="body">Сертифікат відповідності</p>
+              </div>
+          </div>
+      </div>
+     </section>
+
+      <!-- Scroll to top button -->
+    <div class="scroll-top-btn">
+      <img src="./icons/arrow-up.svg" class="responsive" alt="Scroll to top">
+   </div>
 
   
   <!-- FOOTER -->
@@ -97,26 +179,46 @@
         <address>
           <ul class="footer-contacts">
             <li>
-              <a href="https://g.co/kgs/i4huJ4B" target="_blank" rel="noreferrer noopener">
+              <a href="https://g.co/kgs/i4huJ4B" target="_blank" rel="noreferrer noopener" class="body">
                 01135 Київ, вул. Дмитрівська 69, офіс 241
               </a>
             </li>
-            <li>
-              Тел: <a href="tel:+380730901412">+38 073 090 14 12</a>
+            <li class="body bold">
+              Тел: <a href="tel:+380730901412" class="body bold">+38 073 090 14 12</a>
             </li>
-            <li>
-              Пошта: <a href="mailto:bischofite.office@gmail.com">bischofite.office@gmail.com</a>
+            <li class="body">
+              Пошта: <a href="mailto:bischofite.office@gmail.com" class="body">bischofite.office@gmail.com</a>
             </li>
           </ul>
         </address>
       </div>
     </div>
-    <!-- copyright block -->
+    <div class="social-links-wrapper">
+      <ul class="social-links-list">
+        <li>
+          <a href="#" aria-label="linkedin profile" class="social-link">
+            <img src="../icons/icon-linkedin.svg" alt="linkedin">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="instagram profile" class="social-link">
+            <img src="../icons/icon-instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="whatsapp number" class="social-link">
+            <img src="../icons/icon-whatsapp.svg" alt="whatsapp">
+          </a>
+        </li>
+      </ul>
+    </div>
+    
     <div class="footer-copyright">
       <div class="container">
-        <p class="body">© 2024, All Rights Reserved</p>
+        <p class="text-md">© 2024 All rights reserved.</p>
       </div>
     </div>
+
   </footer>
     <!-- END OF FOOTER -->
   </head>

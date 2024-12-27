@@ -17,7 +17,13 @@ body {
 }
 
 main {
-  overflow: inherit;
+  // overflow: inherit;
+  overflow: hidden;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
 a {
