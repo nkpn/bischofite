@@ -1,7 +1,7 @@
 @mixin heading-green {
     font-family: $font;
     font-weight: 800;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 37px;
     color: $green;
     text-transform: uppercase;
@@ -15,10 +15,9 @@
 @mixin heading-blue {
     font-family: $font;
     font-weight: 800;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 37px;
     color: $blue;
-    text-transform: uppercase;
 
     @media screen and (min-width:$tablet) {
         font-size: 36px;
@@ -28,7 +27,7 @@
 
 @mixin subheading {
     font-family: $font;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: $white;
@@ -48,7 +47,7 @@
 
     @media screen and (min-width:$tablet) {
         font-size: 24px;
-        line-height: 28px;
+        line-height: 40px;
     }
 }
 
@@ -72,6 +71,11 @@
             left: 200px;
         }
     }
+}
+
+.heading-blue {
+    @include heading-blue();
+    display: inline-block;
 }
 
 .subheading {

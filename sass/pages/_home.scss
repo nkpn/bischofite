@@ -2,6 +2,17 @@
     h2 {
         @include heading-green;
     }
+
+    .section {
+        .two-columns-wrapper {
+            margin-top: 32px;
+    
+            @media screen and (min-width: $desktop) {
+                margin-top: 64px;
+                gap: 20px;
+            }
+        }
+    }
 }
 
 .hero {
@@ -45,16 +56,7 @@
 
 
 
-.section {
-    .two-columns-wrapper {
-        margin-top: 32px;
 
-        @media screen and (min-width: $desktop) {
-            margin-top: 64px;
-            gap: 20px;
-        }
-    }
-}
 
 .facts {
     .img-wrapper {

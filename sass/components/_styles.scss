@@ -1,5 +1,6 @@
 @import '../base/fonts';
 // text elements styles
+
 .body {
     @include body;
 }
@@ -151,8 +152,11 @@ section {
 }
 
 .list {
-    list-style: circle;
-
+    li {
+        list-style-type: disc;
+        margin-bottom: 8px;
+        margin-left: 18px;
+    }
 
     strong {
         color: $green;
@@ -162,4 +166,70 @@ section {
 
 .no-scroll {
     overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 32px 0;
+    
+    .heading-blue {
+        margin-bottom: 0 !important;
+        display: table-cell;
+    }
+
+    th, td {
+        padding: 4px;
+
+        @media screen and (min-width:$desktop) {
+            padding: 8px;
+        }
+    }
+    
+    th:not(:last-of-type), td:not(:last-of-type) {
+       
+        text-align: center;
+        border-right: 1px solid $white;
+    }
+
+    tr:first-of-type th {
+        border-bottom: 1px solid $white;
+    }
+
+    tr:first-of-type td {
+        border-bottom: 1px solid $white;
+    }
+
+    th:first-child {
+        border-right: 1px solid $white;
+    }
+
+    th:last-child,
+    td:last-child {
+        border-right: none;
+    }
+
+    th.heading-blue {
+        text-align: left;
+        @media screen and (max-width:$desktop) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    td {
+        &.body {
+            font-family: $font;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: $white;
+            text-align: center;
+
+            @media screen and (min-width:$desktop) {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+    }
 }
