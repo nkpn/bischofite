@@ -724,14 +724,21 @@ footer .footer-copyright p {
 
 .button {
   background-color: #93C90F;
-  padding: 14px 28px;
+  padding: 7px 14px;
   display: inline-block;
   cursor: pointer;
   border-radius: 2px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 14px 28px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .button:hover, .button:focus {
   opacity: 0.9;
@@ -745,6 +752,14 @@ footer .footer-copyright p {
   width: -moz-fit-content;
   width: fit-content;
   background-color: #7AB6D9;
+}
+.button.product-btn img {
+  width: 14px;
+}
+@media screen and (min-width: 768px) {
+  .button.product-btn img {
+    width: 18px;
+  }
 }
 
 .two-columns-wrapper {
@@ -780,7 +795,7 @@ video {
 
 section .container {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
 }
 @media screen and (min-width: 1024px) {
   section .container {

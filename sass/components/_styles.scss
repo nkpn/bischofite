@@ -65,17 +65,19 @@
 
 .button {
     background-color: $green;
-    padding: 14px 28px;
+    padding: 7px 14px;
     display: inline-block;
     cursor: pointer;
     border-radius: 2px;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
     color: $black;
 
     @media screen and (min-width: $tablet) {
-        
+        padding: 14px 28px;
+        font-size: 24px;
+        line-height: 30px;
     }
 
     &:hover,
@@ -91,6 +93,14 @@
     justify-content: center;
     width: fit-content;
     background-color: $blue;
+
+    img {
+        width: 14px;
+
+        @media screen and (min-width: $tablet) {
+            width: 18px;
+        }
+    }
 }
 
 
@@ -131,7 +141,7 @@ section {
     .container {
         // overflow: hidden;
         padding-top: 32px;
-        padding-bottom: 32px;
+        padding-bottom: 48px;
 
         @media screen and (min-width: $desktop) {
             padding-top: 64px;
