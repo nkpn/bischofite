@@ -16,8 +16,8 @@
 
 .navigation-link {
     font-family: $font;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 500;
     color: $text;
     text-transform: uppercase;
@@ -71,14 +71,14 @@
     cursor: pointer;
     border-radius: 2px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     color: $black;
 
     @media screen and (min-width: $tablet) {
         padding: 14px 28px;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 21px;
+        line-height: 28px;
     }
 
     &:hover,

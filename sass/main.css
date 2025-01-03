@@ -383,7 +383,7 @@ header .header-container {
 }
 @media screen and (min-width: 1440px) {
   header .header-container {
-    padding: 0 32px;
+    padding: 0 24px;
     justify-content: unset;
   }
 }
@@ -392,7 +392,7 @@ header .header-logo {
 }
 @media screen and (min-width: 1024px) {
   header .header-logo {
-    padding: 32px 0;
+    padding: 16px 0;
   }
 }
 header .header-logo img {
@@ -400,7 +400,7 @@ header .header-logo img {
 }
 @media screen and (min-width: 1024px) {
   header .header-logo img {
-    max-width: 420px;
+    max-width: 360px;
   }
 }
 header .mobile-menu {
@@ -638,8 +638,8 @@ footer .footer-copyright p {
 .heading-blue {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 24px;
-  line-height: 37px;
+  font-size: 21px;
+  line-height: 26px;
   color: #7AB6D9;
   display: inline-block;
 }
@@ -653,8 +653,8 @@ footer .footer-copyright p {
 .subheading {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21px;
   color: #ffffff;
   margin-bottom: 18px;
 }
@@ -672,14 +672,14 @@ footer .footer-copyright p {
 .body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 21px;
   color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .body {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 21px;
+    line-height: 28px;
   }
 }
 
@@ -692,8 +692,8 @@ footer .footer-copyright p {
 
 .navigation-link {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
@@ -744,15 +744,15 @@ footer .footer-copyright p {
   cursor: pointer;
   border-radius: 2px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: #000000;
 }
 @media screen and (min-width: 768px) {
   .button {
     padding: 14px 28px;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 21px;
+    line-height: 28px;
   }
 }
 .button:hover, .button:focus {
@@ -893,8 +893,8 @@ table td.body {
 .home-page h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 24px;
-  line-height: 37px;
+  font-size: 21px;
+  line-height: 26px;
   color: #93C90F;
   text-transform: uppercase;
 }
