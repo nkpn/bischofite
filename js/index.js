@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Function for "Scrol to top" button
   const scrollToTopButton = document.querySelector('.scroll-top-btn');
-  console.log(scrollToTopButton)
   function scrollToTop() {
-    console.log('click to top')
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }

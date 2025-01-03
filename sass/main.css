@@ -1065,11 +1065,16 @@ table td.body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 24px;
+  gap: 0px;
 }
-@media screen and (min-width: 1024px) {
-  .product-page .product-hero .two-columns-wrapper div:nth-of-type(2) {
-    gap: 40px;
+.product-page .product-hero .two-columns-wrapper div:nth-of-type(2) .img-wrapper {
+  display: flex;
+  max-height: 700px;
+  height: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .product-page .product-hero .two-columns-wrapper div:nth-of-type(2) .img-wrapper img {
+    height: 100%;
   }
 }
 .product-page .features .heading-blue {
