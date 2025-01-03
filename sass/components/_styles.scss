@@ -172,6 +172,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 32px 0;
+    margin-left: -15px;
+    
+    @media screen and (min-width:$desktop) {
+        margin-left: 0;
+    }
     
     .heading-blue {
         margin-bottom: 0 !important;
@@ -212,8 +217,8 @@ table {
     th.heading-blue {
         text-align: left;
         @media screen and (max-width:$desktop) {
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 14px;
+            line-height: 18px;
         }
     }
 
@@ -221,8 +226,8 @@ table {
         &.body {
             font-family: $font;
             font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
+            font-size: 12px;
+            line-height: 16px;
             color: $white;
             text-align: center;
 

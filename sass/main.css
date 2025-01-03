@@ -836,6 +836,12 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 32px 0;
+  margin-left: -15px;
+}
+@media screen and (min-width: 1024px) {
+  table {
+    margin-left: 0;
+  }
 }
 table .heading-blue {
   margin-bottom: 0 !important;
@@ -871,15 +877,15 @@ table th.heading-blue {
 }
 @media screen and (max-width: 1024px) {
   table th.heading-blue {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 table td.body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 16px;
   color: #ffffff;
   text-align: center;
 }
