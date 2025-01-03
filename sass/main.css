@@ -722,8 +722,8 @@ footer .footer-copyright p {
   cursor: pointer;
   z-index: 50;
 }
-.scroll-top-btn:hover {
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+.scroll-top-btn:active, .scroll-top-btn:focus, .scroll-top-btn:hover {
+  opacity: 0.7;
 }
 @media screen and (min-width: 1024px) {
   .scroll-top-btn {
@@ -1085,6 +1085,9 @@ table td.body {
 }
 .product-page .features .subheading:not(:first-of-type) {
   margin-top: 22px;
+}
+.product-page .features .margin-bottom {
+  margin-bottom: 24px;
 }
 .product-page .how-to-use .step {
   margin-bottom: 36px;
