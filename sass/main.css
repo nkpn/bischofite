@@ -934,7 +934,7 @@ table td.body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media screen and (min-width: 1024px) {
