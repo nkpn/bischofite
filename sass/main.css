@@ -919,7 +919,7 @@ table td.body {
   max-width: 100%;
   position: relative;
   margin: 0 auto;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 55px);
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {

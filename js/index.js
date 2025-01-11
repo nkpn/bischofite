@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Function for "Scrol to top" button
   const scrollToTopButton = document.querySelector('.scroll-top-btn');
+  const video = document.getElementById('video');
+  const screenWidth = window.innerWidth;
+
   function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -21,6 +24,19 @@ document.addEventListener("DOMContentLoaded", function() {
  
   scrollToTopButton.addEventListener('click', scrollToTop)
 
+  // video src change function
+  if (video) {
+    console.log('screenWidth', screenWidth)
+    if (screenWidth >= 767) {
+      video.src = "./video/1736501130395698.mp4";
+      console.log('desktop video')
+    } else {
+      video.src = "./video/mobile.mp4";
+      console.log('mobile video')
+    }
+
+    // video.load();
+  }
   // Mobile Header Menu Show / Hide function
   const toggleCheckbox = document.getElementById("toggle");
   const mobileMenu = document.querySelector(".mobile-menu");
