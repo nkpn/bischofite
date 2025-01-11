@@ -125,16 +125,6 @@
     width: 100%;
     height: auto;
 }
-video {
-    border-radius: 16px;
-    width: 100%;
-    height: auto;
-
-    @media screen and (min-width: $desktop) { 
-        border-radius: 44px;
-    }
-}
-
 
 
 // Default sections paddings 

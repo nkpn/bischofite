@@ -16,41 +16,45 @@
 }
 
 .hero {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
     height: 100%;
-    display: block;
-    background: url('../images/home/hero.png') no-repeat;
-    background-size:cover;
-    background-position: center;
+    overflow: hidden;
 
-    .container {
-        padding-top: 32px;
-        padding-bottom: 32px;
-
-        @media screen and (min-width: $desktop) {
-            padding-top: 48px;
-            padding-bottom: 48px;
-        }
+    @media screen and (min-width: $desktop-large) {
+        max-width: 1600px;
     }
 
 
-    .hero-img-wrapper {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-
-        @media screen and (min-width: $tablet) {
-            justify-content: end;
-            max-width: 50%;
-            margin-left: auto;
-        }
+    .video-container {
+        
     }
 
-    img {
-        max-height: 550px;
 
-        @media screen and (min-width: $desktop) {
-            max-height: 860px;
-        }
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+
+        // @media screen and (min-aspect-ratio: 16/9) {
+        //     width: 100%;
+        //     height: auto;
+        // }
+
+        // @media screen and (max-aspect-ratio: 16/9) {
+        //     width: auto;
+        //     height: 100%;
+        // }
     }
 }
 
