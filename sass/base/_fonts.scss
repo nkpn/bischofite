@@ -67,6 +67,10 @@
         z-index: 1;
         background-color: $green;
 
+        @media screen and (min-width: $tablet) {
+            left: 250px;
+        }
+
         @media screen and (min-width: $desktop) {
             left: 200px;
         }

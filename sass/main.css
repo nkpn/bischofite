@@ -629,6 +629,11 @@ footer .footer-copyright p {
   z-index: 1;
   background-color: #93C90F;
 }
+@media screen and (min-width: 768px) {
+  .heading:after {
+    left: 250px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .heading:after {
     left: 200px;
@@ -911,12 +916,17 @@ table td.body {
 
 .hero {
   width: 100%;
-  aspect-ratio: 16/9;
-  position: relative;
   max-width: 100%;
+  position: relative;
   margin: 0 auto;
-  height: 100%;
+  height: 98vh;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    aspect-ratio: 16/9;
+    height: 100%;
+  }
 }
 @media screen and (min-width: 1440px) {
   .hero {
