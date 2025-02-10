@@ -670,6 +670,18 @@ footer .footer-copyright p {
   }
 }
 
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #93C90F;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 21px;
+  }
+}
+
 .bold {
   font-weight: 700 !important;
 }
@@ -683,8 +695,8 @@ footer .footer-copyright p {
 }
 @media screen and (min-width: 768px) {
   .body {
-    font-size: 21px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -953,7 +965,18 @@ table td.body {
     width: 60%;
   }
 }
+.facts h3 {
+  margin-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .facts h3 {
+    margin-top: 24px;
+  }
+}
 
+.products .list {
+  margin-bottom: 24px;
+}
 .products .product-btn {
   margin-bottom: 36px;
 }
@@ -1034,6 +1057,9 @@ table td.body {
   .product-page .body {
     line-height: 40px;
   }
+}
+.product-page .title {
+  color: #7AB6D9;
 }
 .product-page .heading-blue {
   margin-bottom: 18px;

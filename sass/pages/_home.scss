@@ -56,11 +56,21 @@
             flex-basis: 60%;
             width: 60%;
         }
-       
+    }
+
+    h3 {
+        margin-top: 16px;
+
+        @media screen and (min-width: $tablet) {
+           margin-top: 24px;
+        }
     }
 }
 
 .products {
+    .list {
+        margin-bottom: 24px;
+    }
     .product-btn {
         margin-bottom:36px;
 

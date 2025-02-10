@@ -38,6 +38,17 @@
     }
 }
 
+@mixin title {
+    font-family: $font;
+    font-weight: 500;
+    font-size: 18px;
+    color: $green;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 21px;
+    }
+}
+
 @mixin body {
     font-family: $font;
     font-weight: 500;
@@ -46,8 +57,8 @@
     color: $white;
 
     @media screen and (min-width:$tablet) {
-        font-size: 21px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 24px;
     }
 }
 
@@ -85,6 +96,10 @@
 .subheading {
     @include subheading();
     margin-bottom: 18px;
+}
+
+.title {
+    @include title();
 }
 
 .bold {
